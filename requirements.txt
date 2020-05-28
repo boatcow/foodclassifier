@@ -1,7 +1,5 @@
-Flask==1.0.3
+Flask
 gunicorn
-numpy==1.18.1
-https://download.pytorch.org/whl/nightly/cpu/torch_nightly-1.0.0.dev20181129-cp36-cp36m-linux_x86_64.whl
-fastai==1.0.60
-
-
+numpy
+https://download.pytorch.org/whl/cpu/torch-1.0.0-cp36-cp36m-linux_x86_64.whl
+fastai==1.0.52
