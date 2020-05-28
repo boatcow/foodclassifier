@@ -1,9 +1,11 @@
 from flask import *
 from fastai.vision import *
 from fastai.metrics import error_rate
+import os
 
 app = Flask(__name__)
 
+p = os.environ.get('PORT', 5000)
 @app.route('/')
 def upload():
     return render_template("index.html")
@@ -30,4 +32,4 @@ def take():
             return jsonify(d_food)
 if __name__ == "__main__":
     device = 'cpu'
-    app.run(host='0.0.0.0', port=5000, debug=True)
+    app.run(host='0.0.0.0', port=p, debug=True)
