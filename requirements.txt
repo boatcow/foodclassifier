@@ -1,4 +1,4 @@
-gunicornfastai==1.0.60
+
 fastprogress==0.2.2
 flake8==2.5.4
 Flask==1.0.2
